@@ -1,0 +1,4 @@
+getSeats how many seats are available
+getSeats how many seats are open
+getNextClass what is the next class
+getNextClass what is the next scheduled class
