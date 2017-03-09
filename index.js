@@ -13,7 +13,7 @@ app.launch(function(req, res) {
 });
 app.intent('getSeats', {
   'slots': {},
-  'utterances': ['{from Mendix}']
+  'utterances': ['How many seats are {available|open}']
 },
   function(req, res) {
     var seatHelper = new SeatsDataHelper();
@@ -31,7 +31,7 @@ app.intent('getSeats', {
 );
 app.intent('getNextClass', {
   'slots': {},
-  'utterances': ['{When is the next class?}']
+  'utterances': ['When is the next {|scheduled} class']
 },
   function(req, res) {
     var classHelper = new SeatsDataHelper();
